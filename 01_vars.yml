@@ -26,4 +26,3 @@
   - name: Show Status
     debug:
       var: httpd_status
-
