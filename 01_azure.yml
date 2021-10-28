@@ -6,10 +6,10 @@
   tasks:
   - name: Create resource group
     azure_rm_resourcegroup:
-      name: "webserver_{{ user }}"
+      name: "webserver_{{ msrg }}"
       location: northeurope
       tags:
-          solution: "webserver_{{ user }}"
+          solution: "webserver_{{ msrg }}"
           delete: ansibletraining
     register: rg
   - debug:
